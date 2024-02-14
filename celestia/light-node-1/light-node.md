@@ -1,6 +1,6 @@
 # Validator-Node
 
-{% embed url="https://docs.celestia.org/nodes/light-node" %}
+{% embed url="https://docs.celestia.org/nodes/consensus-node#run-the-validator-node" %}
 Official guide documentation
 {% endembed %}
 
