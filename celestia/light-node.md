@@ -11,14 +11,14 @@ Official guide documentation
 * Disk: **50 GB SSD Storage**
 * Bandwidth: **56 Kbps for Download/56 Kbps for Upload**
 
-### Dependencies install
+## Dependencies install
 
 ```sh
 sudo apt update && sudo apt upgrade -y
 sudo apt install curl tar wget clang pkg-config libssl-dev jq build-essential git make ncdu -y
 ```
 
-### Go install
+## Go install
 
 ```sh
 ver="1.21.1" 
@@ -58,20 +58,20 @@ make cel-key
 celestia version
 ```
 
-### Initialize the light node[​](https://docs.celestia.org/nodes/light-node#initialize-the-light-node) <a href="#initialize-the-light-node" id="initialize-the-light-node"></a>
+## Initialize the light node[​](https://docs.celestia.org/nodes/light-node#initialize-the-light-node) <a href="#initialize-the-light-node" id="initialize-the-light-node"></a>
 
 ```sh
 celestia light init
 ```
 
-### Keys and wallets <a href="#initialize-the-light-node" id="initialize-the-light-node"></a>
+## Keys and wallets <a href="#initialize-the-light-node" id="initialize-the-light-node"></a>
 
 ```sh
 ./cel-key add <key-name> --keyring-backend test \
     --node.type light --p2p.network celestia
 ```
 
-### Run node in the background using SystemD
+## Run node in the background using SystemD
 
 ```sh
 sudo tee <<EOF >/dev/null /etc/systemd/system/celestia-lightd.service
